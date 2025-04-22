@@ -35,7 +35,7 @@ export function Room(props) {
   });
 
   const pillowMaterial = new THREE.MeshPhongMaterial({
-    color: "#8338ec",
+    color: "#78a083",
   });
 
   const chairMaterial = new THREE.MeshPhongMaterial({
