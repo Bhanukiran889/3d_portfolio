@@ -3,40 +3,71 @@ import emailjs from "@emailjs/browser";
 
 import TitleHeader from "../components/TitleHeader";
 import ContactExperience from "../components/models/contact/ContactExperience";
+import useAlert from "../hooks/useAlert";
+import Alert from "../components/Alert";
 
 const Contact = () => {
   const formRef = useRef(null);
+
+  const { alert, showAlert, hideAlert } = useAlert();
   const [loading, setLoading] = useState(false);
+
   const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
+  const handleChange = ({ target: { name, value } }) => {
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true); // Show loading state
+    setLoading(true);
 
-    try {
-      await emailjs.sendForm(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        formRef.current,
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          to_name: "Bhanukiran Reddy",
+          from_email: form.email,
+          to_email: "bkreddy889@gmail.com",
+          message: form.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setLoading(false);
+          showAlert({
+            show: true,
+            text: "Thank you for your message 😃",
+            type: "success",
+          });
+
+          setTimeout(() => {
+            hideAlert(false);
+            setForm({
+              name: "",
+              email: "",
+              message: "",
+            });
+          }, 3000);
+        },
+        (error) => {
+          setLoading(false);
+          console.error("EmailJS Error:", error);
+
+          showAlert({
+            show: true,
+            text: "I didn't receive your message 😢",
+            type: "danger",
+          });
+        }
       );
-
-      // Reset form and stop loading
-      setForm({ name: "", email: "", message: "" });
-    } catch (error) {
-      console.error("EmailJS Error:", error); // Optional: show toast
-    } finally {
-      setLoading(false); // Always stop loading, even on error
-    }
   };
 
   return (
@@ -46,6 +77,9 @@ const Contact = () => {
           title="Get in Touch – Let’s Connect"
           sub="💬 Have questions or ideas? Let’s talk! 🚀"
         />
+
+        {alert.show && <Alert {...alert} />}
+
         <div className="grid-12-cols mt-16">
           <div className="xl:col-span-5">
             <div className="flex-center card-border rounded-xl p-10">
@@ -107,6 +141,7 @@ const Contact = () => {
               </form>
             </div>
           </div>
+
           <div className="xl:col-span-7 min-h-96">
             <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
               <ContactExperience />
