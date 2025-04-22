@@ -44,6 +44,9 @@ export function Room(props) {
 
   return (
     <group {...props} dispose={null}>
+      <ambientLight intensity={0.4} />
+      <directionalLight position={[10, 10, 5]} intensity={1} castShadow />
+
       <EffectComposer>
         <SelectiveBloom
           selection={screensRef}

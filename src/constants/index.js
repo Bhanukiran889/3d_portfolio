@@ -204,46 +204,39 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "NXTWave",
+    mentions: "@nxtwave",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "Bhanukiran has demonstrated exceptional curiosity and a drive to learn full-stack development using technologies like React, Node.js, and Express. His ability to grasp new concepts quickly and implement them in real-world projects truly stands out.",
     imgPath: "/images/client1.png",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    name: "Vaishnavi Bagewadi",
+    mentions: "@vaishnavi",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "Bhanukiran was the backbone of our final year project. He took charge of backend development, database integration, and helped the team stay organized. He’s a reliable, focused, and technically strong teammate to work with.",
     imgPath: "/images/client3.png",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
+    name: "Darshan Tawari",
+    mentions: "@darshan",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "I’ve seen Bhanukiran consistently improve his development skills through practice and personal projects. He’s always experimenting with new tools, collaborating on ideas, and refining his work. His passion for coding is truly inspiring.",
     imgPath: "/images/client2.png",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
+    name: "varcons",
+    mentions: "@varcons",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+      "During his summer internship, Bhanukiran showed great professionalism and a strong problem-solving mindset. He contributed meaningfully to our ongoing projects, took feedback positively, and consistently met deadlines. A promising developer with a bright future ahead.",
     imgPath: "/images/client5.png",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
+    name: "Srinivas",
+    mentions: "@srinivas",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "Bhanukiran is a dedicated and talented developer. He has a knack for understanding complex problems and breaking them down into manageable tasks. His attention to detail and commitment to quality make him a valuable asset to any team.",
     imgPath: "/images/client4.png",
-  },
-  {
-    name: "Albert Flores",
-    mentions: "@albertflores",
-    review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-    imgPath: "/images/client6.png",
   },
 ];
 

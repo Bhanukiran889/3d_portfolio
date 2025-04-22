@@ -8,7 +8,7 @@ const ContactExperience = () => {
     <Canvas shadows camera={{ position: [0, 3, 7], fov: 45 }}>
       <ambientLight intensity={0.5} color="#78a083" />
 
-      <directionalLight position={[5, 5, 3]} intensity={2.5} color="#a8e0d3" />
+      <directionalLight position={[5, 5, 3]} intensity={2.5} color="#98f0f3" />
 
       <directionalLight
         position={[5, 9, 1]}
