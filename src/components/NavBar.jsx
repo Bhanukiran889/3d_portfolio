@@ -36,7 +36,7 @@ const NavBar = () => {
 
         <div className="flex flex-wrap items-center gap-3 sm:gap-4 sm:mt-0">
   <a
-    href="/BhanuKiranReddy_Resume.pdf"
+    href="../public/BhanuKiranReddy_Resume.pdf"
     download
     className="text-sm sm:text-base px-4 sm:px-6 py-2 rounded-full bg-[#78a083] text-black font-medium border border-[#78a083] hover:bg-[#202020] hover:text-white transition-all duration-300 whitespace-nowrap"
   >
