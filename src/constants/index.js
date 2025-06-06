@@ -175,19 +175,19 @@ const expCards = [
       "Participated in daily stand-ups, code reviews, and deployment tasks.",
     ],
   },
-  {
-    review: "This project showcases my skills in interactive UI design and modern web development. Built from scratch to reflect my personality and technical abilities.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "Personal Portfolio Website",
-    date: "Feb 2025 – Present",
-    responsibilities: [
-      "Designed and developed a 3D interactive portfolio using React.js and Three.js.",
-      "Implemented smooth animations and transitions for a dynamic user experience.",
-      "Ensured responsive design and cross-browser compatibility.",
-      "Deployed the application using Netlify (or Vercel/GitHub Pages).",
-    ],
-  },
+  // {
+  //   review: "This project showcases my skills in interactive UI design and modern web development. Built from scratch to reflect my personality and technical abilities.",
+  //   imgPath: "/images/exp3.png",
+  //   logoPath: "/images/logo3.png",
+  //   title: "Personal Portfolio Website",
+  //   date: "Feb 2025 – Present",
+  //   responsibilities: [
+  //     "Designed and developed a 3D interactive portfolio using React.js and Three.js.",
+  //     "Implemented smooth animations and transitions for a dynamic user experience.",
+  //     "Ensured responsive design and cross-browser compatibility.",
+  //     "Deployed the application using Netlify (or Vercel/GitHub Pages).",
+  //   ],
+  // },
 ];
 
 const expLogos = [
