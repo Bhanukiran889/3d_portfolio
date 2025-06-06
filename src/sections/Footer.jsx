@@ -10,7 +10,8 @@ const Footer = () => {
         <div className="socials">
           {socialImgs.map((socialImg, index) => (
             <div key={index} className="icon">
-              <img src={socialImg.imgPath} alt="social icon" />
+              <a href="https://www.linkedin.com/in/bhanukiran-reddy889">
+              <img src={socialImg.imgPath} alt="social icon" /></a>
             </div>
           ))}
         </div>

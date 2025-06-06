@@ -11,10 +11,6 @@ const navLinks = [
     name: "Skills",
     link: "#skills",
   },
-  {
-    name: "Testimonials",
-    link: "#testimonials",
-  },
 ];
 
 const words = [
@@ -247,18 +243,22 @@ const socialImgs = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
+    path:"https://www.linkedin.com/in/bhanukiran-reddy889",
   },
   {
     name: "fb",
     imgPath: "/images/fb.png",
+    path:"https://www.linkedin.com/in/bhanukiran-reddy889",
   },
   {
     name: "x",
     imgPath: "/images/x.png",
+    path:"https://www.linkedin.com/in/bhanukiran-reddy889",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    path:"https://www.linkedin.com/in/bhanukiran-reddy889",
   },
 ];
 
